@@ -1,3 +1,3 @@
-# Example InSpec Profile
+# InSpec Profile
 
-This example shows the implementation of an InSpec profile.
+Inpsec profile to check password compliance on a Entreprise Linux version 7.

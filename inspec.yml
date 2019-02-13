@@ -1,8 +1,8 @@
-name: linux_password_compliance
-title: InSpec Profile
-maintainer: The Authors
-copyright: The Authors
-copyright_email: you@example.com
+name: linux_password_compliance_el7
+title:EL7 linux password compliance InSpec Profe
+maintainer: Sebastien Chartrand
+copyright: All rights reseved
+copyright_email: sebastien.chartrand@fujitsu.com
 license: Apache-2.0
 summary: An InSpec Compliance Profile
 version: 0.1.0
