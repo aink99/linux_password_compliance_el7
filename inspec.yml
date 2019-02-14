@@ -1,5 +1,5 @@
-name: linux_password_compliance_el7
-title: EL7 linux password compliance InSpec Profe
+name: linux_password_compliance_el6
+title: EL6 linux password compliance InSpec Profe
 maintainer: Sebastien Chartrand
 copyright: All rights reseved
 copyright_email: sebastien.chartrand@fujitsu.com
