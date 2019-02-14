@@ -62,11 +62,11 @@ control "Password_Creation_Requirement_Parameters_Using_pam_pwquality" do
     #  its('content') { should match /^$/ }
       its('content') { should match /^auth.*sufficient.*pam_fprintd.so$/ }
       its('content') { should match /^auth.*requisite.*pam_succeed_if.so.*uid.*>=.*1000.*quiet_success$/ }
-      its('content') { should match /^auth.*sufficient.*pam_unix.so.*try_first_pass$/ }
+      its('content') { should match /^auth.*sufficient.*pam_unix.so\stry_first_pass$/ }
       its('content') { should match /^account.*sufficient.*pam_localuser.so$/ }
       its('content') { should match /^account.*sufficient.*pam_succeed_if.so.*uid.*<.*1000.*quiet$/ }
       its('content') { should match /^account.*required.*pam_permit.so$/ }
-      its('content') { should match /^password.*sufficient.*pam_unix.so.*sha512.*shadow.*nullok.*try_first_pass.*use_auth.*tok$/ }
+      its('content') { should match /^password.*sufficient.*pam_unix.so.*sha512.*shadow.*try_first_pass.*use_auth.*tok$/ }
       its('content') { should match /^password.*requisite.*pam_pwhistory.so.*remember=5.*use_authtok$/ }
   end
 
@@ -75,11 +75,11 @@ control "Password_Creation_Requirement_Parameters_Using_pam_pwquality" do
       its('content') { should match /^auth.*required.*pam_faildelay.so.*delay=2000000$/ }
     #  its('content') { should match /^$/ }
       its('content') { should match /^auth.*requisite.*pam_succeed_if.so.*uid.*>=.*1000.*quiet_success$/ }
-      its('content') { should match /^auth.*sufficient.*pam_unix.so.*try_first_pass$/ }
+      its('content') { should match /^auth.*sufficient.*pam_unix.so\stry_first_pass$/ }
       its('content') { should match /^account.*sufficient.*pam_localuser.so$/ }
       its('content') { should match /^account.*sufficient.*pam_succeed_if.so.*uid.*<.*1000.*quiet$/ }
       its('content') { should match /^account.*required.*pam_permit.so$/ }
-      its('content') { should match /^password.*sufficient.*pam_unix.so.*sha512.*shadow.*nullok.*try_first_pass.*use_auth.*tok$/ }
+      its('content') { should match /^password.*sufficient.*pam_unix.so.*sha512.*shadow.*try_first_pass.*use_auth.*tok$/ }
       its('content') { should match /^password.*requisite.*pam_pwhistory.so.*remember=5.*use_authtok$/ }
   end
 
